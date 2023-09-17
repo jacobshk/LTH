@@ -1,0 +1,54 @@
+<mat-list>
+    <mat-list-item style = "height: 5em;">Name:
+        <mat-form-field class="example-form-field">
+            <input matInput type="text" [(ngModel)]="value">
+            <button *ngIf="value" matSuffix mat-icon-button aria-label="Clear" (click)="value=''">
+              <mat-icon>close</mat-icon>
+            </button>
+          </mat-form-field>
+        <button mat-raised-button color = 'primary' style = "margin-left: 5%;">
+            Save
+        </button>
+        <button mat-raised-button color = 'accent' style = "margin-left: 1%;">
+            Cancel
+        </button>
+    </mat-list-item>
+    <mat-divider></mat-divider>
+    <mat-list-item style = "height: 5em;">Email:
+        <mat-form-field class="example-form-field">
+            <input matInput type="text" [(ngModel)]="value1">
+            <button *ngIf="value1" matSuffix mat-icon-button aria-label="Clear" (click)="value1=''">
+              <mat-icon>close</mat-icon>
+            </button>
+          </mat-form-field>
+          <button mat-raised-button color = 'primary' style = "margin-left: 5%;">
+            Save
+        </button>
+        <button mat-raised-button color = 'accent' style = "margin-left: 1%;">
+            Cancel
+        </button> 
+    </mat-list-item>
+    <mat-divider></mat-divider>
+    <mat-list-item style = "height: auto; width:75%;">Past Documents:
+      <table>
+        <tr>
+          <th>Document Title </th>
+          <th>Status</th>
+        </tr>
+        <tr>
+          <td>4450 River Way #123 Lease</td>
+          <td><a href="4450_lease_translated">View now</a></td>
+        </tr>
+        <tr>
+          <td>JP Morgan Bank Account Information</td>
+          <td><a href="4450_lease_translated">View now</a></td>
+        </tr>
+        <tr>
+          <td>"Dairy Farmer's Associated"  Agreement</td>
+          <td><a href="4450_lease_translated">View now</a></td>
+        </tr>
+
+
+      </table>
+    </mat-list-item>
+</mat-list>

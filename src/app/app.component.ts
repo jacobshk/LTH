@@ -7,4 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'LTH';
+  public home(){
+    window.location.href = "/user-homepage";
+  }
 }

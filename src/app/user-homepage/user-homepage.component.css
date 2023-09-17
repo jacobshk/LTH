@@ -1,0 +1,24 @@
+table {
+    margin-left: 5%;
+    height: 100%;
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  th{
+    border: 1px solid black;
+    text-align: left;
+    font-size: medium;
+    font-weight: bolder;
+  }
+  td {
+    border: 1px solid black;
+    text-align: left;
+    font-size: medium;
+    font-weight: light;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+  

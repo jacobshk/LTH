@@ -1,0 +1,21 @@
+<form *ngIf="submitted">
+    <input type="file" id="myFile" name="filename">
+    <input type="submit" (click)="submit()">
+  </form>
+
+  <div *ngIf="!submitted">
+    <button mat-raised-button color="warn" (click)="submitdoc()">Submit</button>
+    <button mat-raised-button color="warn">Cancel</button>
+    
+    <form>
+      <h4>Original language = English</h4>
+      <h4>Target language = Spanish</h4>
+      <h4>Document title = <input text>   </h4>
+         
+    </form>
+    
+    <mat-card>
+        <ngx-extended-pdf-viewer [src]="'assets/simple one page rental agreement 02 (1).pdf'">
+        </ngx-extended-pdf-viewer>
+    </mat-card>
+  </div>

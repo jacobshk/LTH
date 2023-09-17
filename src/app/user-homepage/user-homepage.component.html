@@ -1,0 +1,39 @@
+<div style="margin-top: 5%; font-size: xx-large; font-weight: bold; margin-top:10%">
+    <mat-grid-list cols="2" rowHeight="2:1">
+        <mat-grid-tile>
+          
+            <table>
+                <tr>
+                  <th>Document Title </th>
+                  <th>Status  <button mat-raised-button (click)="refresh()">Refresh</button>
+                  </th>
+                </tr>
+                <tr *ngIf="refreshed">
+                  <td>Lease_agreement</td>
+                  <td>Step 1 Completed. <a href="view-document">View now</a></td>
+                </tr>
+                <tr>
+                  <td>U.S. Bank Loan Agreement</td>
+                  <td>Step 1 Completed. Step 2 In progress.</td>
+                </tr>
+                <tr>
+                  <td>55000 River Road Mortgage Agreement</td>
+                  <td>Step 1 Completed. Step 2 In progress.</td>
+                </tr>
+                <tr>
+                  <td>Chase Credit Card Contract</td>
+                  <td>Step 1 Completed. Step 2 In progress.</td>
+                </tr>
+    
+              </table>
+
+        </mat-grid-tile>
+        <mat-grid-tile>
+          
+            <div fxLayout="column" fxLayoutAlign="space-between">
+                <button mat-raised-button color="accent" style="width:100%;margin-left:25%; margin-bottom:75%" (click)="account()">My Account</button>
+                <button mat-raised-button color="accent" style="width:100%; margin-left:25%" (click)="upload()">Upload new document</button>    
+            </div>
+        </mat-grid-tile>
+    </mat-grid-list>
+</div>
